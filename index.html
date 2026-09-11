@@ -4,19 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Novo</title>
+    <title>Calculadora de Frete</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+   <h1>Calculadora de Frete</h1>
+    <div id="formContainer">
+    <form id="freteForm">
+        <label for="origem">Frete:</label>
+        <input type="text" id="origem" name="origem" required>
 
-        </textarea id="text-input" rows="10" cols="50" placeholder="Digite seu texto aqui..."></textarea>
-        <br>
-        <button id="save-audio">Salvar como Áudio</button>
+        <label for="destino">Diesel:</label>
+        <input type="text" id="destino" name="destino" required>
 
+        <label for="precoDiesel">Preço Diesel (R$):</label>
+        <input type="text" id="precoDiesel" name="precoDiesel" required>
 
+        <label for="kmPorLitro">KM por Litro:</label>
+        <input type="text" id="kmPorLitro" name="kmPorLitro" required>
+
+        <label for="peso">Distância (km):</label>
+        <input type="number" id="peso" name="peso" required>
+
+        <button type="submit">Calcular Frete</button>
+    </form>
+
+  
+        </thead>
+        <tbody id="freteTableBody">
+            <!-- As linhas da tabela serão adicionadas dinamicamente aqui -->
+        </tbody>
+    </table>
 
 </body>
 
